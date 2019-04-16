@@ -11,6 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//后台路由组
+Route::group([],function(){
+	//后台首页
+	Route::get('/', function () {
+	    // return view('welcome');
+	    return view('admin/index');
+	});
+	//后台欢迎页
+	Route::get('/admin/welcome', function () {
+	    return view('admin/welcome');
+	});
 });
+
+
