@@ -14,7 +14,7 @@
 //后台路由组
 Route::group([],function(){
 	//后台首页
-	Route::get('/', function () {
+	Route::get('/cwm', function () {
 	    // return view('welcome');
 	    return view('admin/index');
 	});
@@ -23,5 +23,3 @@ Route::group([],function(){
 	    return view('admin/welcome');
 	});
 });
-
-
