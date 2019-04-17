@@ -18,3 +18,9 @@ Route::group([],function(){
 	//后台欢迎页
 	Route::get('/ciwei/welcome',"Admin\IndexController@welcome");
 });
+
+//前台路由组
+Route::group([],function(){
+	//前台首页
+	Route::get('/', "Home\IndexController@index");
+});
