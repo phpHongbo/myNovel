@@ -14,12 +14,7 @@
 //后台路由组
 Route::group([],function(){
 	//后台首页
-	Route::get('/cwm', function () {
-	    // return view('welcome');
-	    return view('admin/index');
-	});
+	Route::get('/ciwei', "Admin\IndexController@index");
 	//后台欢迎页
-	Route::get('/admin/welcome', function () {
-	    return view('admin/welcome');
-	});
+	Route::get('/ciwei/welcome',"Admin\IndexController@welcome");
 });
